@@ -136,6 +136,10 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+        manifestPlaceholders = [
+            JPUSH_APPKEY: "487d355600afb703a4877770",
+            JPUSH_CHANNEL: "default"
+        ]
     }
     splits {
         abi {
