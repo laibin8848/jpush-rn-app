@@ -3,13 +3,15 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "react-native run-android",
+    "android": "react-native run-android --port 8082",
     "ios": "react-native run-ios",
-    "start": "react-native start",
+    "start": "react-native start --port 8082 --host 0.0.0.0",
     "test": "jest",
     "lint": "eslint ."
   },
   "dependencies": {
+    "jcore-react-native": "^1.9.4",
+    "jpush-react-native": "^2.8.7",
     "react": "17.0.1",
     "react-native": "0.64.2"
   },
